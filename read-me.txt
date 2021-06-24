@@ -1,0 +1,67 @@
+/***************************/
+//Problem description.
+
+At a well-known company, volunteers work in shifts. In each of their shifts, they fill out a form to keep
+track of their attendance. See "volunteer_attendance_data.csv" file for their shift attendance data.
+
+From this data, we want to find out which of the volunteers attended the same shift on the same day. In other
+words, we want to find out which of the volunteers have met in the office during their shift.
+
+We can create a network graph from this data that would tell us which of the volunteershad overlapping shifts.
+A network graph is a representation technique to display relation among entities (nodes) with connecting edges.
+You can find more about graph theory here: https://en.wikipedia.org/wiki/Graph_theory.
+
+From the above data table, we can see that,
+● Babita and Rajjak came on the same shift: 3 - 6pm shift on 05/01/2021
+● Kabori and Shabana came on the same shift twice: 07/01/2021, 3 - 6pm shift and 12pm -3am shift, and so on.
+
+In this scenario, the volunteers, identified by their name or ID (it is safe to assume that both names and IDs
+are unique) are the nodes. The connection (edge) between two volunteers is their overlapping shift, identified
+jointly by the date and the shift column.
+
+Your task is to find all the connections from data table. A CSV file has been given to you that contains the
+data table. For this challenge, you have to write a program that:
+1. Reads the given CSV file
+2. Finds all the nodes and their connections
+3. Stores the graph representation (nodes and connections) in a suitable data structure
+4. Writes the outputs in a CSV file in the following format:
+
+node1 node2
+Bobita Rajjak
+Shabana Kabori
+...
+
+Once you find out all the connections, you will see that some volunteers had multiple overlapping shifts.
+We can say that those volunteers who had multiple overlapping shifts have stronger connections. In graph
+theory, we can represent connection strength with weights (Find more about weighted graphs here:
+https://mathworld.wolfram.com/WeightedGraph.html).
+
+You will receive bonus points if you can find the weights of the connections from the given CSV file. You can
+add another column called "weight" in your output CSV file, which will then look like the following:
+
+node1 node2 weight
+Bobita Rajjak 1
+Shabana Kabori 2
+...
+
+/***************************/
+//install and run code.
+
+First, you need to git clone this repository from my GitHub repository link and open the folder by your
+test-editor. Then you need to install node.js and given below npm packages, which you need to install from the
+terminal window.
+
+npm init -y
+npm i csvtojson
+npm i json2csv
+
+Run this code by below comment in your terminal window:
+
+node index.js
+
+See the output in the terminal window.
+
+/***************************/
+//output file name.
+
+A separate CSV file which contain my outputs named "output.csv".

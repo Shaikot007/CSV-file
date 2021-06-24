@@ -1,0 +1,20 @@
+{
+  "name": "csv-file",
+  "version": "1.0.0",
+  "description": "csv-file-data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "csv"
+  ],
+  "author": "Shaikot",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "json2csv": "^5.0.6"
+  }
+}
