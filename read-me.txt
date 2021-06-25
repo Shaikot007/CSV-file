@@ -55,6 +55,10 @@ npm init -y
 npm i csvtojson
 npm i json2csv
 
+To install all necessary npm package, run this code by below comment in your terminal window:
+
+npm install
+
 Run this code by below comment in your terminal window:
 
 node index.js
